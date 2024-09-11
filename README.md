@@ -23,7 +23,7 @@ These instructions will help you set up the project on your local machine for de
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/srkanyalcinkaya/portfolio.git
    ```
 
 2. Navigate to the project directory:
