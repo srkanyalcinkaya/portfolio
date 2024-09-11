@@ -49,7 +49,7 @@ export default function Page() {
                         </span>
                     </div>
                     <p className="text-base ">{writing.description}</p>
-                    <Link href={writing.link} className="text-sm font-bold text-black dark:text-white hover:underline flex items-center gap-2 mt-4 ">Okumaya Devam Et <MdArrowForward color="black"/></Link>
+                    <Link href={writing.link} className="text-sm font-bold text-black dark:text-white hover:underline flex items-center gap-2 mt-4 ">Okumaya Devam Et <MdArrowForward /></Link>
                 </div>
             ))}
         </div>
