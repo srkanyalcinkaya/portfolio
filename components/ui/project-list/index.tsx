@@ -22,7 +22,7 @@ export const ProjectList = ({ title, year, description, distribution, businessMo
                     <Image src={img} alt={title} width={48} height={48} className="rounded-full" />
                 </div>
                 <div>
-                    <h2 className="text-xl font-bold text-black">{title}</h2>
+                    <h2 className="text-xl font-bold text-black dark:text-white">{title}</h2>
                     <div className="flex items-center gap-2 font-semibold">{year} <div className={`w-2 h-2 rounded-full ${active ? "bg-green-500" : "bg-red-500"}`} /> <span className={`${active ? "text-green-500" : "text-red-500"}`}> {active ? "Aktif" : "Pasif"}</span></div>
                 </div>
             </div>
@@ -30,12 +30,12 @@ export const ProjectList = ({ title, year, description, distribution, businessMo
                 {description}
             </p>
             <div className="text-gray-400 mb-2">
-                <div>Dağıtım: <span className="font-semibold text-black">{distribution}</span></div>
-                <div>İş modeli: <span className="font-semibold text-black">{businessModel}</span></div>
-                <div>Teknik yığın: <span className="font-semibold text-black">{technicalStack}</span></div>
+                <div>Dağıtım: <span className="font-semibold text-black dark:text-white">{distribution}</span></div>
+                <div>İş modeli: <span className="font-semibold text-black dark:text-white">{businessModel}</span></div>
+                <div>Teknik yığın: <span className="font-semibold text-black dark:text-white">{technicalStack}</span></div>
             </div>
             {link && (
-                <Link href={link} className="text-black hover:underline flex items-center gap-2 font-semibold">
+                <Link href={link} className="text-black dark:text-white hover:underline flex items-center gap-2 font-semibold">
                     Visit Website <MdArrowOutward />
                 </Link>
             )}

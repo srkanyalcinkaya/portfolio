@@ -39,12 +39,12 @@ export default function Page() {
             <p className="text-xl font-semibold mb-5">Bazı düşünceler ve öğrendiklerim:</p>
             {writings.map((writing: any) => (
                 <div key={writing.title} className="gap-2 flex flex-col ">
-                    <h2 className="text-xl font-bold text-black hover:underline">{writing.title}</h2>
+                    <h2 className="text-xl font-bold text-black dark:text-white hover:underline">{writing.title}</h2>
                     <div className="flex gap-2 text-sm ">
                         <span>
                             {writing.date} -
                         </span>
-                        <span className="text-black">
+                        <span className="text-black dark:text-white">
                             {writing.category}
                         </span>
                     </div>

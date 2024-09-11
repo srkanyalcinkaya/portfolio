@@ -10,7 +10,7 @@ export const Header = () => {
     const { theme, toggleTheme } = useTheme();
     return (
         <header className="flex gap-9 items-start justify-between  pt-16 pb-12 ">
-            <div className="md:hidden block absolute top-5 right-5" onClick={toggleTheme}>
+            <div className="md:hidden block absolute top-5 right-5 cursor-pointer" onClick={toggleTheme}>
                 {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
             </div>
             <div className="flex items-center gap-9">
