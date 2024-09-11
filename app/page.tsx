@@ -9,20 +9,20 @@ export default function Home() {
       </p>
       <p className="text-xl mb-5">
         Bu, benim sayısal evim, burada paylaşıyorum
-        <Link href="/projects" className="text-black"> projeler</Link>, 
-        <Link href="/writings" className="text-black"> yazılar</Link>, ve 
-        <Link href="/codes" className="text-black"> kodlar</Link>.
+        <Link href="/projects" className="text-black dark:text-white"> projeler</Link>, 
+        <Link href="/writings" className="text-black dark:text-white"> yazılar</Link>, ve 
+        <Link href="/codes" className="text-black dark:text-white"> kodlar</Link>.
       </p>
-      <div className="flex gap-2 items-center text-xl">
+      <div className="flex gap-2 items-center text-xl text-black dark:text-white">
         İletişime geçmek için:
         <Link href="https://x.com/srkanyalcinkaya" target="_blank">
-          <FiTwitter size={16} color="black" />
+          <FiTwitter size={16}/>
         </Link>
         <Link href="https://github.com/srkanyalcinkaya" target="_blank">
-          <FiGithub size={16} color="black" />
+          <FiGithub size={16}/>
         </Link>
         <Link href="https://www.linkedin.com/in/serkan-yalcinkaya/" target="_blank">
-          <FiLinkedin size={16} color="black" />
+          <FiLinkedin size={16}/>
         </Link>
       </div>
 
