@@ -28,6 +28,20 @@ export const metadata: Metadata = {
     description: "Serkan Yalçınkaya'nın kişisel web sitesi",
     images: ['https://serkanyalcinkaya.vercel.app/images/2024-yazilim-dili.webp'],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://serkanyalcinkaya.vercel.app/',
+  }
 };
 
 export default function RootLayout({
