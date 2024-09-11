@@ -1,10 +1,37 @@
 "use client"
 import { GithubRepoCard } from "@/components/ui/github-repo-card";
 import getLatestRepos from "@/lib/getLatestRepos";
+import { Metadata } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
+
+export const metadata: Metadata = {
+    title: "Kodlarım | Serkan Yalçınkaya",
+    description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+    openGraph: {
+      title: 'Kodlarım | Serkan Yalçınkaya',
+      description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+      type: 'website',
+      url: 'https://serkanyalcinkaya.vercel.app/',
+      siteName: 'Serkan Yalçınkaya',
+      images: [
+        {
+          url: 'https://serkanyalcinkaya.vercel.app/images/2024-yazilim-dilleri.webp',
+          width: 1200,
+          height: 630,
+          alt: 'Serkan Yalçınkaya',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Kodlarım | Serkan Yalçınkaya',
+      description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+      images: ['https://serkanyalcinkaya.vercel.app/images/2024-yazilim-dili.webp'],
+    },
+};
 export default function Page() {
     const [repos, setRepos] = useState<any>([]);
 
@@ -17,7 +44,6 @@ export default function Page() {
         repositories()
     }, [])
 
-    console.log(repos)
     return (
         <div>
             <div className="flex flex-row justify-between items-center">
@@ -43,7 +69,7 @@ export default function Page() {
             </div>
             }
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-10">
-                
+
 
                 {repos &&
                     repos.map((latestRepo: any, index: any) => (

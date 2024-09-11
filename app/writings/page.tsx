@@ -1,6 +1,34 @@
 import { writings } from "@/constants";
 import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+    title: "Yazılarım | Serkan Yalçınkaya",
+    description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+    openGraph: {
+      title: 'Yazılarım | Serkan Yalçınkaya',
+      description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+      type: 'website',
+      url: 'https://serkanyalcinkaya.vercel.app/',
+      siteName: 'Serkan Yalçınkaya',
+      images: [
+        {
+          url: 'https://serkanyalcinkaya.vercel.app/images/2024-yazilim-dilleri.webp',
+          width: 1200,
+          height: 630,
+          alt: 'Serkan Yalçınkaya',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Yazılarım | Serkan Yalçınkaya',
+      description: "Serkan Yalçınkaya'nın kişisel web sitesi",
+      images: ['https://serkanyalcinkaya.vercel.app/images/2024-yazilim-dili.webp'],
+    },
+};
 
 export default function Page() {
     return (
