@@ -23,7 +23,7 @@ export const ProjectList = ({ title, year, description, distribution, businessMo
                 </div>
                 <div>
                     <h2 className="text-xl font-bold text-black">{title}</h2>
-                    <p className="flex items-center gap-2 font-semibold">{year} <div className={`w-2 h-2 rounded-full ${active ? "bg-green-500" : "bg-red-500"}`} /> <span className={`${active ? "text-green-500" : "text-red-500"}`}> {active ? "Aktif" : "Pasif"}</span></p>
+                    <div className="flex items-center gap-2 font-semibold">{year} <div className={`w-2 h-2 rounded-full ${active ? "bg-green-500" : "bg-red-500"}`} /> <span className={`${active ? "text-green-500" : "text-red-500"}`}> {active ? "Aktif" : "Pasif"}</span></div>
                 </div>
             </div>
             <p className="mb-4">
