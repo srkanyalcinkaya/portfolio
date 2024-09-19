@@ -51,9 +51,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en" >
+    <html lang="tr" >
       <body
-        className={`font-sans antialiased bg-white dark:bg-black text-[#6b7280] dark:text-white`}
+        className={`font-sans antialiased bg-white dark:bg-black text-[#6b7280] dark:text-white px-4`}
       >
 
         <div className="max-w-screen-md mx-auto">

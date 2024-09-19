@@ -16,7 +16,7 @@ interface ProjectListProps {
 
 export const ProjectList = ({ title, year, description, distribution, businessModel, technicalStack, link, img, active }: ProjectListProps) => {
     return (
-        <div className="p-6 rounded-lg shadow-md w-full mb-5">
+        <div className="p-6 rounded-lg shadow dark:shadow-white shadaow-black w-full mb-5">
             <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full mr-4">
                     <Image src={img} alt={title} width={48} height={48} className="rounded-full" />
