@@ -1,8 +1,9 @@
 import { writings } from "@/constants";
-import Link from "next/link";
+// import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
 import { Metadata } from "next";
-
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export const metadata: Metadata = {
     title: "Yazılarım | Serkan Yalçınkaya",
@@ -34,9 +35,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+    const t = useTranslations("writings");
     return (
         <div>
-            <p className="text-xl font-semibold mb-5">Bazı düşünceler ve öğrendiklerim:</p>
+            <p className="text-xl font-semibold mb-5">{t("some-thoughts-and-learnings")}:</p>
             {writings.map((writing: any) => (
                 <div key={writing.title} className="gap-2 flex flex-col ">
                     <h2 className="text-xl font-bold text-black dark:text-white hover:underline">{writing.title}</h2>
@@ -49,7 +51,7 @@ export default function Page() {
                         </span>
                     </div>
                     <p className="text-base ">{writing.description}</p>
-                    <Link href={writing.link} className="text-sm font-bold text-black dark:text-white hover:underline flex items-center gap-2 mt-4 ">Okumaya Devam Et <MdArrowForward /></Link>
+                    <Link href={writing.link} className="text-sm font-bold text-black dark:text-white hover:underline flex items-center gap-2 mt-4 ">{t("continue-reading")}<MdArrowForward /></Link>
                 </div>
             ))}
         </div>

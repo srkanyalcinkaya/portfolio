@@ -1,6 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 
-export const GithubRepoCard = ({ latestRepo }: any) => {
+export const GithubRepoCard = ({ latestRepo, t }: { latestRepo: any, t: any }) => {
     return (
         <div className="">
             <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
@@ -15,9 +15,9 @@ export const GithubRepoCard = ({ latestRepo }: any) => {
                 href={latestRepo.clone_url}
                 className="font-semibold group flex flex-row space-x-2 w-full items-center"
             >
-                <p>View Repository </p>
+                <p>{t("view-on-github")} </p>
                 <div className="transform  group-hover:translate-x-2 transition duration-300">
-                <MdArrowOutward />
+                    <MdArrowOutward />
                 </div>
             </a>
         </div>

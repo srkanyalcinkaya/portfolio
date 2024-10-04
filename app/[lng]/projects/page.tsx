@@ -1,6 +1,7 @@
 import { ProjectList } from "@/components/ui/project-list";
 import { projects } from "@/constants";
 import { Metadata } from "next";
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
     title: "Projelerim | Serkan Yalçınkaya",
@@ -33,9 +34,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const t = useTranslations("projects");
     return (
         <div>
-            <p className="text-xl mb-5">Projelerim:</p>
+            <p className="text-xl mb-5"> {t("my-projects")}:</p>
             {projects.map((project, index) => (
                 <ProjectList key={index} {...project} />
             ))}

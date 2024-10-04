@@ -1,21 +1,20 @@
-import Link from "next/link";
+// import Link from "next/link";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { LiaTelegram } from "react-icons/lia";
-
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 export default function Home() {
+  const t = useTranslations("home");
   return (
     <main>
       <p className="text-xl mb-5">
-        Ben, profesyonel bir yazılım geliştiricisiyim. Topluluk yönetimi ve geliştirme konusunda profesyonel olarak 5 yıldır ilgileniyorum, alanlarında yüksek düzeyde bilgi ve deneyime sahip olduğum.
+        {t("section-1")}
       </p>
       <p className="text-xl mb-5">
-        Bu, benim sayısal evim, burada paylaşıyorum
-        <Link href="/projects" className="text-black dark:text-white"> projeler</Link>,
-        <Link href="/writings" className="text-black dark:text-white"> yazılar</Link>, ve
-        <Link href="/codes" className="text-black dark:text-white"> kodlar</Link>.
+      {t("section-2")}
       </p>
       <div className="flex gap-2 items-center text-xl text-black dark:text-white">
-        İletişime geçmek için:
+      {t("section-3")}:
         <Link href="https://x.com/srkanyalcinkaya" target="_blank">
           <FiTwitter size={16} />
         </Link>

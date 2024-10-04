@@ -1,0 +1,33 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Projects",
+        "writings": "Writings",
+        "codes": "Codes"
+    },
+    "home": {
+        "section-1": "I am a professional software developer. I have been professionally involved in community management and development for 5 years, possessing a high level of knowledge and experience in my fields.",
+        "section-2": "This is my digital home, where I share projects, writings, and codes.",
+        "section-3": "To get in touch"
+    },
+    "projects": {
+        "my-projects": "My Projects",
+        "cards": {
+            "distribution": "Distribution",
+            "business-model": "Business Model",
+            "tech-stack": "Tech Stack",
+            "active": "Active",
+            "passive": "Passive",
+            "visit-website": "Visit Website"
+        }
+    },
+    "writings": {
+        "some-thoughts-and-learnings": "Some Thoughts and Learnings",
+        "continue-reading": "Continue Reading"
+    },
+    "codes": {
+        "latest-codes": "Latest Codes",
+        "view-repository": "View Github",
+        "view-on-github": "View on GitHub"
+    }
+}

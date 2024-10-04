@@ -1,0 +1,33 @@
+{
+    "header": {
+        "home": "Ana Sayfa",
+        "projects": "Projeler",
+        "writings": "Yazılar",
+        "codes": "Kodlar"
+    },
+    "home": {
+        "section-1": "Ben profesyonel bir yazılım geliştiricisiyim. 5 yıldır topluluk yönetimi ve geliştirme ile profesyonel olarak ilgileniyorum, alanlarımda yüksek düzeyde bilgi ve deneyime sahibim.",
+        "section-2": "Bu benim dijital evim, burada projelerimi, yazılarımı ve kodlarımı paylaşıyorum.",
+        "section-3": "İletişime geçmek için"
+    },
+    "projects": {
+        "my-projects": "Projelerim",
+        "cards": {
+            "distribution": "Dağıtım",
+            "business-model": "İş Modeli",
+            "tech-stack": "Teknoloji Yığını",
+            "active": "Aktif",
+            "passive": "Pasif",
+            "visit-website": "Web Sitesini Ziyaret Et"
+        }
+    },
+    "writings": {
+        "some-thoughts-and-learnings": "Bazı Düşünceler ve Öğrenimler",
+        "continue-reading": "Devam Et"
+    },
+    "codes": {
+        "latest-codes": "Son Kodlar",
+        "view-repository": "Github'ı Görüntüle",
+        "view-on-github": "GitHub'da Görüntüle"
+    }
+}

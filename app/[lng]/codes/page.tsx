@@ -1,9 +1,10 @@
 import { GithubRepoCard } from "@/components/ui/github-repo-card";
 import getLatestRepos from "@/lib/getLatestRepos";
-import Link from "next/link";
+// import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { Metadata } from 'next';
-
+import {getTranslations} from 'next-intl/server';
+import { Link } from '@/i18n/routing';
 export const metadata: Metadata = {
     title: 'En Son Kodlar | Serkan Yalçınkaya',
     description: 'Serkan Yalçınkaya\'nın en son GitHub projeleri ve kod örnekleri.',
@@ -51,12 +52,12 @@ async function getRepos() {
 
 export default async function Page() {
     const repos = await getRepos();
-
+    const t = await getTranslations('codes');
     return (
         <div>
             <div className="flex flex-row justify-between items-center">
                 <h1 className="text-xl font-bold text-center">
-                    En Son Kodlar
+                   {t("latest-codes")}
                 </h1>
 
                 <Link
@@ -65,14 +66,14 @@ export default async function Page() {
                     href={`https://github.com/srkanyalcinkaya`}
                     className="rounded-md bg-black dark:bg-white shadow-lg flex flex-row gap-2 items-center dark:text-black text-white p-2"
                 >
-                    <p>GitHub'da Gör</p>
+                    <p>{t("view-repository")}</p>
                     <MdArrowOutward />
                 </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                 {repos && repos.map((latestRepo: any, index: number) => (
-                    <GithubRepoCard latestRepo={latestRepo} key={index} />
+                    <GithubRepoCard latestRepo={latestRepo} key={index} t={t}/>
                 ))}
             </div>
         </div>
