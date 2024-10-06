@@ -131,7 +131,7 @@ const projects = [
 ]
 
 
-const writings = [
+const writingsTR = [
     {
         title: "2024 Yılında Hangi Yazılım Dilini Öğrenmeliyim?",
         description: "Bu makale, 2024 yılında hangi yazılım dilini öğrenmeniz gerektiği konusunda kapsamlı bilgiler sunar. Popüler diller, teknolojik trendler ve endüstri taleplerine dair detaylı bir inceleme yapabilirsiniz.",
@@ -141,4 +141,14 @@ const writings = [
     },
 ];
 
-export { projects, writings };
+
+const writingsEN = [
+    {
+        title: "Which Programming Language Should I Learn in 2024?",
+        description: "This article provides comprehensive information on which programming language you should learn in 2024. You can find detailed insights into popular languages, technological trends, and industry demands.",
+        date: "September 2024",
+        category: "Software",
+        link: "/writings/s/2024-yilinda-hangi-yazilim-dilini-ogrenmeliyim",
+    },
+];
+export { projects, writingsTR, writingsEN };
