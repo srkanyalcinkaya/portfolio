@@ -56,6 +56,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <head>
+        <meta name="google-site-verification" content="DDKAgemA4um99dQRC1V01Byx46b1JNkm-KKLiKMFDwA" />
+      </head>
       <body
         className={`font-sans antialiased bg-white dark:bg-black text-[#6b7280] dark:text-white px-4`}
       >
