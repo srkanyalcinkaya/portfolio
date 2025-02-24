@@ -60,7 +60,7 @@ export default async function RootLayout({
         className={`font-sans antialiased bg-white dark:bg-black text-[#6b7280] dark:text-white px-4`}
       >
         <NextIntlClientProvider messages={messages}>
-          <div className="max-w-screen-md mx-auto">
+          <div className="max-w-screen-lg  mx-auto">
             <Header />
             {children}
             <Footer />

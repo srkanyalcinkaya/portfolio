@@ -1,5 +1,49 @@
 const projects = [
     {
+        title: "Coolhub Bag",
+        description: "Coolhub Bag orta ölçekli bir alışveriş sitesidir. Coolhub Bag çanta satışlarını sunduğu bir alışveriş sitesidir.",
+        distribution: "Blockchain",
+        businessModel: "Alışveriş Hizmetleri",
+        technicalStack: "Typescript, Nextjs, TailwindCSS, PWA, Redux, İyzico, Geliver, NextAuth.js",
+        link: "https://www.coolhub-bag.com/",
+        img: "/images/projects/coolhub-logo.png",
+        year: "2025",
+        active: true
+    },
+    {
+        title: "Genesis Hukuk Eğitim Platformu",
+        description: "Blockchain Teknolojisi Okuryazarlığı ve Hukuk İlişkisi",
+        distribution: "Eğitim",
+        businessModel: "Ücretli Hizmet",
+        technicalStack: "Typescript, Nextjs, TailwindCSS, Redux, AWS, NextAuth.js",
+        link: "https://www.dijitalvarlikhukuku.com/",
+        img: "/images/projects/digitalvarlıkhukuk-lgoo.webp",
+        year: "2025",
+        active: true
+    },
+    {
+        title: "Turkic Digital",
+        description: "Türk Devletleri için daha bağlantılı, verimli ve müreffeh bir dijital ekosistem oluşturmak için teknoloji ve inovasyon yoluyla köprüler kurmak.",
+        distribution: "Blockchain",
+        businessModel: "Ücretsiz hizmet",
+        technicalStack: "Typescript, Nextjs, TailwindCSS, Redux",
+        link: "https://www.turkicdigital.org/",
+        img: "/images/projects/turkicdigital-logo.svg",
+        year: "2025",
+        active: true
+    },
+    {
+        title: "[upon]",
+        description: "Merkezi olmayan, güvenli ve dinamik kiralama çözümleriyle Web3 aracılığıyla sanal ofislerin geleceğini güçlendirmek, NFT odaklı tokenizasyon ve modüler akıllı sözleşme entegrasyonu yoluyla gerçek dünya varlıklarını dijital fırsatlara dönüştürmek.",
+        distribution: "Blockchain",
+        businessModel: "Ücretsiz hizmet",
+        technicalStack: "Typescript, Nextjs, TailwindCSS, Redux, Solidity, Web3.js, NFT",
+        link: "https://upon-fvrs-git-main-asims-projects-27b258d6.vercel.app/",
+        img: "/images/projects/turkicdigital-logo.svg",
+        year: "2025",
+        active: true
+    },
+    {
         title: "Chavinci Network",
         description: "Modüler Defter Teknolojisi (MDT)'nin piyasaya sürülmesiyle, merkezsizleşme, özelleştirme ve verimliliğin yeni bir çağı burada",
         distribution: "Blockchain",

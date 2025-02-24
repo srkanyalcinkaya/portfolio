@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://serkanyalcinkaya.vercel.app/wrintgs/2024-yilinda-hangi-yazilim-dilini-ogrenmeliyim',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
       url: 'https://serkanyalcinkaya.vercel.app/codes',
       lastModified: new Date(),
       changeFrequency: 'monthly',
